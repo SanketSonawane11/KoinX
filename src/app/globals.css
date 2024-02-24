@@ -51,6 +51,15 @@
   line-height: 19.36px;
 }
 
+.inner-menu li
+{
+  transition: all .2s ease-out;
+}
+
+.inner-menu li:hover{
+  scale: 1.04;
+}
+
 .get-started {
   width: 136px;
   height: 70px;
