@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.nav-main {
+  width: 100%;
+  height: 80px;
+  border: 0 0 10px 0;
+  border-bottom: 1px solid #dedfe2;
+  box-shadow: 0 0 4px #2a2a2a46;
+  left: -0.15px;
+  padding: 0.5px 45px;
+  /* gap: 829.23px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 92px;
+  height: 72px;
+  top: 4px;
+  background: url("/logo.png") center no-repeat;
+  background-size: contain;
+}
+
+.menu-items {
+  width: 909px;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.inner-menu {
+  width: 728px;
+  height: 79px;
+  gap: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 300px;
+  font-size: 16px;
+  line-height: 19.36px;
+}
+
+.get-started {
+  width: 136px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-started button {
+  background-color: #2870ea;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  transition: all 0.2s ease-out;
+  font-size: 16px;
+}
+
+.get-started button:hover{
+  height: 45px;
+  scale: 1.05;
+}
+
+/* New styles for mobile */
+@media (max-width: 768px) {
+
+  .nav-main{
+    padding: 0 10px;
+  }
+
+  .menu-items
+  {
+    width: fit-content;
+    padding: 0 20px;
+  }
+
+  .inner-menu {
+    display: none;
+  }
+
+  .get-started {
+    display: none;
+  }
+
+  .menu-items.mobile-open .inner-menu {
+    display: flex;
+  }
+
+  .menu-items.mobile-open .get-started {
+    display: flex;
+  }
+
+  /* Hamburger icon styles */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+  }
+}
