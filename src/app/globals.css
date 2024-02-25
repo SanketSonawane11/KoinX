@@ -4,17 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+.main-body {
   font-family: "Inter", sans-serif;
+  background-color: #EFF2F5;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column ;
 }
 
 .nav-main {
-  width: 100%;
+  width: 100vw;
   height: 80px;
   border: 0 0 10px 0;
   border-bottom: 1px solid #dedfe2;
+  background-color: #fff;
   box-shadow: 0 0 4px #2a2a2a46;
-  left: -0.15px;
+  /* left: -0.15px; */
   padding: 0.5px 45px;
   /* gap: 829.23px; */
   display: flex;
@@ -23,15 +30,15 @@
 }
 
 .logo {
-  width: 92px;
+  width: 120px;
   height: 72px;
-  top: 4px;
+  /* top: 4px; */
   background: url("/logo.png") center no-repeat;
   background-size: contain;
 }
 
 .menu-items {
-  width: 909px;
+  width: 70%;
   height: 79px;
   display: flex;
   align-items: center;
@@ -40,15 +47,15 @@
 }
 
 .inner-menu {
-  width: 728px;
+  width: 50vw;
   height: 79px;
-  gap: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 0 0 300px;
   font-size: 16px;
   line-height: 19.36px;
+  margin: 0 10px 0 0;
 }
 
 .inner-menu li
@@ -82,7 +89,33 @@
   scale: 1.05;
 }
 
-/* New styles for mobile */
+.container{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.path
+{
+  color: #3f3f3f;
+}
+
+.cta
+{
+  width: 426px;
+  height: 500px;
+  background-color: #000;
+}
+
+/* ----------------------------New styles for mobile */
 @media (max-width: 768px) {
 
   .nav-main{
@@ -96,7 +129,12 @@
   }
 
   .inner-menu {
+    width: fit-content;
+    /* height: fit-content; */
+    padding: 15px 0;
     display: none;
+    flex-direction: column;
+    background: #fff;
   }
 
   .get-started {
