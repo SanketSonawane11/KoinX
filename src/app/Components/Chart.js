@@ -10,15 +10,16 @@ const TradingViewWidget = () => {
     script.async = true;
     script.innerHTML = JSON.stringify({
       "symbol": "BITSTAMP:BTCUSD",
-      "width": "750",
-      "height": "500",
+      "width": "1050",
+      "height": "645",
       "locale": "en",
       "dateRange": "12M",
       "colorTheme": "light",
       "trendLineColor": "rgba(60, 120, 216, 1)",
-      "underLineColor": "rgba(109, 158, 235, 1)",
-      "underLineBottomColor": "rgba(164, 194, 244, 1)",
+      "underLineColor": "rgba(201, 218, 248, 1)",
+      "underLineBottomColor": "rgba(164, 194, 244, 0)",
       "isTransparent": true,
+      "showHorizontalLine":true,
       "autosize": false,
       "largeChartUrl": ""
     });

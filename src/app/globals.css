@@ -96,11 +96,12 @@
 }
 
 .inner-container{
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 5px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
 }
 
 .path
@@ -108,11 +109,66 @@
   color: #3f3f3f;
 }
 
+.tradingview-widget-container{
+  background-color: #fff;
+  border-radius: 5px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
 .cta
 {
   width: 426px;
-  height: 500px;
-  background-color: #000;
+  height: 520px;
+}
+
+.cta-inner{
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #0052FE;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.header
+{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 30px;
+  color: #fff;
+}
+
+.cta-inner h2{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+
+.cta-inner h5{
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  word-spacing: 3px;
+  text-align: center;
+}
+
+.cta-button{
+  width: fit-content;
+  height: fit-content;
+  padding: 9px 15px;
+  border-radius: 8px;
+  background-color: #fff;
 }
 
 /* ----------------------------New styles for mobile */
