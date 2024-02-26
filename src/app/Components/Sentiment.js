@@ -37,6 +37,9 @@ function Sentiment() {
                         </div>
                     </div>
                 </div>
+                <div className='analysis'>
+                    
+                </div>
             </div>
         </div>
     )
