@@ -1,4 +1,5 @@
 import React from 'react'
+import Horizontalaction from './Horizontalaction'
 
 function Aboutbitcoin() {
     return (
@@ -25,9 +26,7 @@ function Aboutbitcoin() {
                     <h1 className='font-semibold text-[24px] mb-[20px]'>
                         Already Holding Bitcoin?
                     </h1>
-                    <div className='horizontal-action'>
-
-                    </div>
+                    <Horizontalaction />
                     <hr />
                     <p>Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam massa vel convallis duis ac. Mi adipiscing semper scelerisque porttitor pulvinar nunc risus. Fermentum potenti iaculis lacinia congue ipsum fames amet dui. Purus ultrices tincidunt volutpat in eget. Ullamcorper dui
                     </p>

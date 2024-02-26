@@ -41,7 +41,7 @@ function TradingViewWidget() {
           "maLineColor": "#2962FF",
           "maLineWidth": 1,
           "maLength": 9,
-          "lineWidth": 2,
+          "lineWidth": 1.5,
           "lineType": 0,
           "dateRanges": [
             "1d|1",
