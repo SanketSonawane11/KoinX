@@ -1,46 +1,67 @@
 'use client'
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, memo } from 'react';
 
-const TradingViewWidget = () => {
+function TradingViewWidget() {
+  const container = useRef();
+
   useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
-    script.async = true;
-    script.innerHTML = JSON.stringify({
-      "symbol": "BITSTAMP:BTCUSD",
-      "width": "1030",
-      "height": "645",
-      "locale": "en",
-      "dateRange": "12M",
-      "colorTheme": "light",
-      "trendLineColor": "rgba(60, 120, 216, 1)",
-      "underLineColor": "rgba(201, 218, 248, 1)",
-      "underLineBottomColor": "rgba(164, 194, 244, 0)",
-      "isTransparent": true,
-      "showHorizontalLine":true,
-      "autosize": false,
-      "largeChartUrl": ""
-    });
-
-    document.querySelector('.tradingview-widget-container__widget').appendChild(script);
-
-    return () => {
-      // Cleanup function
-      document.querySelector('.tradingview-widget-container__widget').innerHTML = '';
-    };
+    // Check if the script has already been appended
+    if (!container.current.querySelector('script')) {
+      const script = document.createElement("script");
+      script.src = "https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js";
+      script.type = "text/javascript";
+      script.async = true;
+      script.innerHTML = `
+        {
+          "symbols": [
+            [
+              "CME:BTC1!|1D|XTVCBTC"
+            ]
+          ],
+          "chartOnly": false,
+          "width": "1030",
+          "height": "645",
+          "locale": "en",
+          "colorTheme": "light",
+          "autosize": false,
+          "showVolume": false,
+          "showMA": false,
+          "hideDateRanges": false,
+          "hideMarketStatus": false,
+          "hideSymbolLogo": false,
+          "scalePosition": "left",
+          "scaleMode": "Normal",
+          "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+          "fontSize": "10",
+          "noTimeScale": false,
+          "valuesTracking": "1",
+          "changeMode": "price-and-percent",
+          "chartType": "area",
+          "maLineColor": "#2962FF",
+          "maLineWidth": 1,
+          "maLength": 9,
+          "lineWidth": 2,
+          "lineType": 0,
+          "dateRanges": [
+            "1d|1",
+            "1m|30",
+            "3m|60",
+            "12m|1D"
+          ],
+          "lineColor": "rgba(49, 121, 245, 1)",
+          "topColor": "rgba(91, 156, 246, 1)",
+          "bottomColor": "rgba(255, 255, 255, 0)"
+        }`;
+      container.current.appendChild(script);
+    }
   }, []);
 
   return (
-    <div className="tradingview-widget-container">
-      <div className="tradingview-widget-container__widget"></div>
-      <div className="tradingview-widget-copyright">
-        <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
-        </a>
-      </div>
+    <div className="tradingview-widget-container" ref={container}>
+      {/* This div is not necessary if you want to render only one chart */}
     </div>
   );
-};
+}
 
-export default TradingViewWidget;
+export default memo(TradingViewWidget);

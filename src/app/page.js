@@ -5,6 +5,7 @@ import Path from './Components/Path'
 import CTA from './Components/Cta'
 import Subnav from './Components/Subnav'
 import Sentiment from './Components/Sentiment'
+import Aboutbitcoin from './Components/Aboutbitcoin'
 
 function page() {
   return (
@@ -17,6 +18,7 @@ function page() {
             <Chart />
             <Subnav />
             <Sentiment />
+            <Aboutbitcoin />
           </div>
           <div className='side-content w-[430px]'>
             <CTA />

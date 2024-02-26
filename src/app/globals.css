@@ -153,7 +153,8 @@
   transform: scale(0);
 }
 
-.sentiment-main {
+.sentiment-main,
+.about {
   width: 100%;
   height: fit-content;
   padding: 24px;
@@ -213,11 +214,40 @@
   line-height: 20px;
 }
 
-.sentiment-inner .analysis{
+.sentiment-inner .analysis {
   width: 720px;
   height: 200px;
   border: 2px solid #2a2a2a;
   margin: 15px 0 0 0;
+}
+
+.about-inner {
+  width: 100%;
+  height: fit-content;
+}
+
+.about-inner h1 {
+  color: #0f1629;
+}
+
+.about-inner h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 5px 0;
+  color: #0b1426;
+}
+
+.about-inner p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 8px 0;
+  color: #3e424a;
+}
+
+.about-inner hr {
+  margin: 20px 0;
 }
 
 .cta {
