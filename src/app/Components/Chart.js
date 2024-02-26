@@ -59,7 +59,6 @@ function TradingViewWidget() {
 
   return (
     <div className="tradingview-widget-container" ref={container}>
-      {/* This div is not necessary if you want to render only one chart */}
     </div>
   );
 }
