@@ -10,7 +10,7 @@ const TradingViewWidget = () => {
     script.async = true;
     script.innerHTML = JSON.stringify({
       "symbol": "BITSTAMP:BTCUSD",
-      "width": "1050",
+      "width": "1030",
       "height": "645",
       "locale": "en",
       "dateRange": "12M",
