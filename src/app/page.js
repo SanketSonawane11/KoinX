@@ -6,6 +6,7 @@ import CTA from './Components/Cta'
 import Subnav from './Components/Subnav'
 import Sentiment from './Components/Sentiment'
 import Aboutbitcoin from './Components/Aboutbitcoin'
+import Trending from './Components/Trending'
 
 function page() {
   return (
@@ -21,8 +22,9 @@ function page() {
             <Sentiment />
             <Aboutbitcoin />
           </div>
-          <div className='side-content w-[430px]'>
+          <div className='side-content'>
             <CTA />
+            <Trending />
           </div>
         </div>
         {/* </div> */}

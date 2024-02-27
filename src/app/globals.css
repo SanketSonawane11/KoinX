@@ -21,9 +21,7 @@
   border-bottom: 1px solid #dedfe2;
   background-color: #fff;
   box-shadow: 0 0 4px #2a2a2a46;
-  /* left: -0.15px; */
   padding: 0.5px 45px;
-  /* gap: 829.23px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +30,6 @@
 .logo {
   width: 120px;
   height: 72px;
-  /* top: 4px; */
   background: url("/logo.png") center no-repeat;
   background-size: contain;
 }
@@ -95,11 +92,9 @@
 }
 
 .inner-container {
-  /* padding: 40px; */
   width: 100%;
   height: fit-content;
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
 }
 
@@ -228,13 +223,11 @@
 .sentiment-inner .analysis {
   width: 720px;
   height: 200px;
-  /* border: 2px solid #2a2a2a; */
   margin: 15px 0 0 0;
 }
 
 .analysis-inner {
   width: 100%;
-  /* border: 2px solid #2a2a2a; */
   height: 90%;
   display: flex;
   gap: 50px;
@@ -334,14 +327,6 @@
   gap: 40px;
 }
 
-/* .horizontal-action:nth-child(1) .horizontal-card {
-  background: linear-gradient(to bottom right, #79F1A4, #0E5CAD);
-}
-
-.horizontal-action:nth-child(2) .horizontal-card {
-  background: linear-gradient(to bottom right, #ff9865, #ef3031);
-} */
-
 .horizontal-card {
   width: 390px;
   height: 180px;
@@ -387,9 +372,15 @@
   height: 40px;
 }
 
+.side-content {
+  width: 430px;
+  height: fit-content;
+}
+
 .cta {
-  width: 426px;
+  width: 100%;
   height: 520px;
+  margin: 0 0 20px 0;
 }
 
 .cta-inner {
@@ -436,6 +427,23 @@
   background-color: #fff;
 }
 
+.trending {
+  width: 100%;
+  height: fit-content;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.trending h1{
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #0F1629;
+  margin: 0 0 20px 0;
+}
+
 /* ----------------------------New styles for mobile ------------------*/
 @media (max-width: 768px) {
   .nav-main {
@@ -449,7 +457,6 @@
 
   .inner-menu {
     width: fit-content;
-    /* height: fit-content; */
     padding: 15px 0;
     display: none;
     flex-direction: column;
@@ -509,13 +516,13 @@
     width: 0;
   }
 
-  .analysis-inner{
+  .analysis-inner {
     display: flex;
     align-items: center;
-    gap: 15px
-  }  
+    gap: 15px;
+  }
 
-  .analysis-data li{
+  .analysis-data li {
     width: 200px;
   }
 
@@ -546,7 +553,7 @@
     width: 70%;
   }
 
-  .cta-inner {
+  .cta-inner, .trending {
     width: 365px;
   }
 }
