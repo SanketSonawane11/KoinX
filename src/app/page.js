@@ -11,7 +11,7 @@ function page() {
   return (
     <div className='main-body'>
       <Navbar />
-      <div className='container mx-[50px] mt-[20px] flex flex-col gap-[20px] h-[5091px]'>
+      <div className='container mx-[50px] mt-[20px] flex flex-col gap-[20px]'>
         <Path className='mx-[50px]' />
         {/* <div className='flex items-center flex-col'> */}
         <div className='inner-container'>

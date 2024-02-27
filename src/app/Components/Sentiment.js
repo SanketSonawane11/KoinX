@@ -7,7 +7,7 @@ function Sentiment() {
         <div className='sentiment-main'>
             <div className='sentiment-inner'>
                 <h1 className='font-semibold text-[24px]'>Sentiment</h1>
-                <h5 className='my-[10px] mb-[15px] w-[150px] text-[19px] font-medium text-gray-600 flex items-center gap-[10px]'>Key Events <MdInfo />
+                <h5>Key Events <MdInfo />
                 </h5>
                 <div className='sentiment-info-wrapper'>
                     <div className='info'>
@@ -38,7 +38,21 @@ function Sentiment() {
                     </div>
                 </div>
                 <div className='analysis'>
-                    
+                    <h5>Analyst Estimates <MdInfo /></h5>
+                    <div className='analysis-inner'>
+                        <div className='analysis-percent'>
+                            <p className='text-[36.41px] font-medium'>76</p><p>%</p>
+                        </div>
+                        <ul className='analysis-data pt-[12px] flex flex-col gap-[30px]'>
+                            <li><p> Buy </p> <div className='bar-area'>
+                                <div className='bar one w-[76%]'></div><p>76%</p></div>
+                            </li>
+                            <li><p> Hold </p><div className='bar-area'>
+                                <div className='bar two w-[8%]'></div><p>8%</p></div></li>
+                            <li><p> Sell </p><div className='bar-area'>
+                                <div className='bar three w-[16%]'></div><p>16%</p></div></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
