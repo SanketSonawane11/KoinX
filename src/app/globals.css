@@ -529,13 +529,10 @@
     height: 90px;
   }
 
-  .analysis-percent
-
   .horizontal-action {
     flex-direction: column;
     height: fit-content;
     width: 365px;
-    /* padding: 5px 0; */
   }
 
   .horizontal-card {
