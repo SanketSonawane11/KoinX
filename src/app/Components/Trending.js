@@ -60,7 +60,10 @@ function Trending() {
                     ))}
                 </ul>
             ) : (
-                <p className='text-[18px] font-semibold'>Loading ...</p>
+                <>
+                    <p className='text-[18px] font-semibold'>Loading ...</p>
+                    {getCoins()}
+                </>
             )}
         </div>
     );
