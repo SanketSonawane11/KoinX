@@ -1,5 +1,4 @@
 import React from 'react'
-// import Horizontalaction from './Horizontalaction'
 import { FaArrowRightLong } from "react-icons/fa6";
 
 function Aboutbitcoin() {

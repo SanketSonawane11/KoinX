@@ -6,7 +6,6 @@ function TradingViewWidget() {
   const container = useRef();
 
   useEffect(() => {
-    // Check if the script has already been appended
     if (!container.current.querySelector('script')) {
       const script = document.createElement("script");
       script.src = "https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js";
