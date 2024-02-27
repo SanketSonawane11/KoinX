@@ -445,15 +445,17 @@
 }
 
 /* ----------------------------New styles for mobile ------------------*/
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .nav-main {
     padding: 0 10px;
   }
 
   .menu-items {
     width: fit-content;
+    height: 100px;
     padding: 0 20px;
     display: flex;
+    /* flex-direction: column; */
   }
 
   .inner-menu {
@@ -461,7 +463,6 @@
     padding: 15px 0;
     display: none;
     flex-direction: column;
-    background: #fff;
   }
 
   .get-started {
@@ -470,6 +471,7 @@
 
   .menu-items.mobile-open .inner-menu {
     display: flex;
+    flex-direction: column;
   }
 
   .menu-items.mobile-open .get-started {
