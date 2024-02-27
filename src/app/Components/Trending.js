@@ -43,9 +43,9 @@ function Trending() {
             {trendingCoins.length > 0 ? (
                 <ul className='my-[15px]'>
                     {trendingCoins.map((coin) => (
-                        <li key={coin.item.id} className='my-[15px] text-[16px] font-medium flex items-center justify-between gap-[10px]'>
+                        <li key={coin.item.id} className='my-[10px] text-[15px] lg:my-[15px] lg:text-[16px] font-medium flex items-center justify-between lg:gap-[10px]'>
                             <div className='flex items-center gap-[10px]'>
-                                <img src={coin.logo} alt={`${coin.item.name} logo`} style={{borderRadius: '50%'}} />
+                                <img src={coin.logo} alt={`${coin.item.name} logo`} className='w-[35px]' style={{borderRadius: '50%'}} />
                                 <strong>{coin.item.name}</strong>({coin.item.symbol})
                             </div>
                             {renderPriceChange(coin.priceChange)}
