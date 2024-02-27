@@ -41,7 +41,7 @@ function Sentiment() {
                     <h5>Analyst Estimates <MdInfo /></h5>
                     <div className='analysis-inner'>
                         <div className='analysis-percent'>
-                            <p className='text-[36.41px] font-medium'>76</p><p>%</p>
+                            <p className='text-[28px] lg:text-[36.41px] font-medium'>76</p><p>%</p>
                         </div>
                         <ul className='analysis-data pt-[12px] flex flex-col gap-[30px]'>
                             <li><p> Buy </p> <div className='bar-area'>
