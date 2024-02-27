@@ -14,7 +14,6 @@ function page() {
       <Navbar />
       <div className='container mx-[50px] mt-[20px] flex flex-col gap-[20px]'>
         <Path className='mx-[50px]' />
-        {/* <div className='flex items-center flex-col'> */}
         <div className='inner-container'>
           <div className='main-content w-[1040px] overflow-hidden'>
             <Chart />
@@ -27,7 +26,6 @@ function page() {
             <Trending />
           </div>
         </div>
-        {/* </div> */}
       </div>
     </div>
   )
