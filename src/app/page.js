@@ -12,10 +12,10 @@ function page() {
   return (
     <div className='main-body'>
       <Navbar />
-      <div className='container mx-[50px] mt-[20px] flex flex-col gap-[20px]'>
+      <div className='container w-[89vw] mx-[50px] mt-[20px] flex flex-col justify-center gap-[1px]'>
         <Path className='mx-[50px]' />
         <div className='inner-container'>
-          <div className='main-content w-[1040px] overflow-hidden'>
+          <div className='main-content lg:w-[900px] overflow-hidden'>
             <Chart />
             <Subnav />
             <Sentiment />
