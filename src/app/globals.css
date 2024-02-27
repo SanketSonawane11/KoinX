@@ -426,6 +426,10 @@
     width: 0;
   }
 
+  .sentiment-inner .analysis{
+    width: 100%;
+  }
+
   .horizontal-action {
     flex-direction: column;
     height: fit-content;
