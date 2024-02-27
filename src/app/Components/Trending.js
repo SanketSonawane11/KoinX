@@ -62,7 +62,6 @@ function Trending() {
             ) : (
                 <>
                     <p className='text-[18px] font-semibold'>Loading ...</p>
-                    {getCoins()}
                 </>
             )}
         </div>
