@@ -282,7 +282,7 @@
   background: linear-gradient(to bottom right, #ff9865, #ef3031);
 }
 
-.horizontal-card .content{
+.horizontal-card .content {
   height: 110px;
   width: 200px;
   gap: 15px;
@@ -291,7 +291,7 @@
   flex-direction: column;
 }
 
-.horizontal-card .content h2{
+.horizontal-card .content h2 {
   margin: 0 0 10px 0;
   font-size: 20px;
   font-weight: 700;
@@ -299,7 +299,7 @@
   line-height: 28px;
 }
 
-.already-button{
+.already-button {
   padding: 5px 10px;
   background-color: #fff;
   border-radius: 8px;
@@ -359,7 +359,7 @@
   background-color: #fff;
 }
 
-/* ----------------------------New styles for mobile */
+/* ----------------------------New styles for mobile ------------------*/
 @media (max-width: 768px) {
   .nav-main {
     padding: 0 10px;
@@ -405,5 +405,38 @@
     width: 30px;
     height: 3px;
     background-color: #000;
+  }
+
+  .inner-container {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .main-content{
+    width: 550px;
+  }
+
+  .subnav-main{
+    width: 100%;
+    overflow-x: auto;
+    height: 80px;
+  }
+
+  .subnav-main::-webkit-scrollbar{
+    width: 0;
+  }
+
+  .horizontal-action {
+    flex-direction: column;
+    height: fit-content;
+    padding: 5px 0;
+  }
+
+  .horizontal-card{
+    width: 60%;
+  }
+
+  .cta-inner {
+    width: 530px;
   }
 }

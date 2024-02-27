@@ -27,7 +27,7 @@ function Aboutbitcoin() {
                     <h1 className='font-semibold text-[24px] mb-[20px]'>
                         Already Holding Bitcoin?
                     </h1>
-                    <div className='horizontal-action mb-[50px]'>
+                    <div className='horizontal-action lg:mb-[50px]'>
                         <div className='horizontal-card one'>
                             <img src='/one.png'></img>
                             <div className='content'>
