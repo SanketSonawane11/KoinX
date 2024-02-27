@@ -28,7 +28,6 @@ function Navbar() {
                 <div className={getStartedClasses}>
                     <button className="w-[136px] h-[40px]">Get Started</button>
                 </div>
-                {/* Hamburger icon */}
                 <div className="hamburger" onClick={toggleMobileMenu}>
                     <div></div>
                     <div></div>

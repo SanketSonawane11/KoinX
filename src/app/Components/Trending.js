@@ -30,12 +30,19 @@ function Trending() {
 
     const renderPriceChange = (priceChange) => {
         const direction = priceChange > 0 ? 'up' : 'down';
+        const arrowStyle = {
+            backgroundColor: direction === 'up' ? '#EBF9F4' : 'red',
+            color: direction === 'up' ? '#14B079' : 'white',
+            padding: '2px 5px',
+            borderRadius: '4px',
+        };
         return (
-            <span className={`text-${direction === 'up' ? 'green' : 'red'}-500`}>
+            <span style={arrowStyle}>
                 {direction === 'up' ? '▲' : '▼'} {Math.abs(priceChange).toFixed(2)}%
             </span>
         );
     };
+
 
     return (
         <div className='trending'>
@@ -45,7 +52,7 @@ function Trending() {
                     {trendingCoins.map((coin) => (
                         <li key={coin.item.id} className='my-[10px] text-[15px] lg:my-[15px] lg:text-[16px] font-medium flex items-center justify-between lg:gap-[10px]'>
                             <div className='flex items-center gap-[10px]'>
-                                <img src={coin.logo} alt={`${coin.item.name} logo`} className='w-[35px]' style={{borderRadius: '50%'}} />
+                                <img src={coin.logo} alt={`${coin.item.name} logo`} className='w-[35px]' style={{ borderRadius: '50%' }} />
                                 <strong>{coin.item.name}</strong>({coin.item.symbol})
                             </div>
                             {renderPriceChange(coin.priceChange)}
