@@ -39,8 +39,7 @@ function Aboutbitcoin() {
                         <hr />
                     </div>
                 ))}
-
-                <hr />
+                
                 <div className='holding'>
                     <h1 className='font-semibold text-[24px] mb-[20px]'>
                         Already Holding Bitcoin?
