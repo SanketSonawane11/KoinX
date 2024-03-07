@@ -6,7 +6,7 @@ function Subnav() {
     const [activeItem, setActiveItem] = useState('Sentiment');
 
     const handleItemClick = (item) => {
-        setActiveItem(item); // Update active item state
+        setActiveItem(item); 
     };
 
     return (
